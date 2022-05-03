@@ -456,9 +456,9 @@ info:
       - o parâmetro `paginacao.itensPorPagina` é negativo.
 
 servers:
-  - url: https://pix.example.com/api/
+  - url: http://api-pix.sicredi.com.br/
     description: Servidor de Produção
-  - url: https://pix-h.example.com/api/
+  - url: http://api-pix-h.sicredi.com.br/
     description: Servidor de Homologação
 
 tags:
@@ -1663,7 +1663,7 @@ components:
       type: oauth2
       flows:
         clientCredentials:
-          tokenUrl: https://pix.example.com/oauth/token
+          tokenUrl: http://api-pix.sicredi.com.br/oauth/token
           scopes:
             cob.write: Permissão para alteração de cobranças imediatas
             cob.read: Permissão para consulta de cobranças imediatas
